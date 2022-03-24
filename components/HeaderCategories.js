@@ -19,7 +19,7 @@ const HeaderCategories = () => {
     ]
 
   return (
-    <div className='w-full overflow-hidden bg-green-800'>
+    <nav className='w-full overflow-hidden bg-green-800'>
         {
             categories.map(category => {
                 return (
@@ -29,7 +29,7 @@ const HeaderCategories = () => {
                 )
             })
         }
-    </div>
+    </nav>
   )
 }
 

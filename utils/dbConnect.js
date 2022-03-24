@@ -13,7 +13,7 @@ async function dbConnect() {
     });
 
     connection.isConnected = db.connections[0].readyState;
-    console.log(`MongoDB connected: ${connection.isConnected}`);
+    console.log(`MongoDB connected: ${connection}`);
 }
 
 export default dbConnect;

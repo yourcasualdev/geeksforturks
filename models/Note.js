@@ -1,4 +1,5 @@
-import { Schema, model } from 'mongoose';
+import mongoose, { Schema } from 'mongoose';
+
 
 const NoteSchema = new Schema({
     title: {
@@ -17,4 +18,4 @@ const NoteSchema = new Schema({
     timestamps: true
 });
 
-export default model('Note', NoteSchema);
+module.exports =  mongoose.models.Note || mongoose.model('Note', NoteSchema);
