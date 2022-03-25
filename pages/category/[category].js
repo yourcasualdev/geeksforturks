@@ -3,6 +3,8 @@ import AsideCategories from "../../components/AsideCategories"
 import Header from "../../components/Header"
 import { useRouter } from "next/router"
 import { useState } from "react"
+import ReactMarkdown from "react-markdown"
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 
 const subcategories = [
   { name: "jshome", title: "Javascript Home" },
@@ -21,12 +23,27 @@ const subcategories = [
   { name: "jsLoops", title: "Javascript Loops" },
 ]
 
+const pages = [
+  { name: "jshome", title: "jıfennnnnnnnnnnnnnnnnnnnnnnnnnnnndfaıdjnsıdvn<ısugnva<ıusfvgnaısgnv" },
+]
+
+const TEST_MARKDOWN = "# Markdown Text goes here\n## You can also make subheadings\n\nOne of the **trickiest** parts of getting this project to work was learning how to use `dangerouslySetInnerHTML` to make the previewer display the output of [marked.js](https://github.com/markedjs/marked/blob/master/README.md) as HTML instead of a string.\n\nAccording to the React Documentation,\n> dangerouslySetInnerHTML is React’s replacement for using innerHTML in the browser DOM. In general, setting HTML from code is risky because it’s easy to inadvertently expose your users to a cross-site scripting (XSS) attack.\n\nExample Code:\n```\nfunction createMarkup() {\n  return {__html: 'First &middot; Second'};\n}\n\nfunction MyComponent() {\n  return <div dangerouslySetInnerHTML={createMarkup()} />;\n}\n```\n\nJust remember to:\n- Search, Read, Ask\n- Ask for help on the Forum (that's what worked for me.)\n\n"
+
+const CodeHighlight = ({ value, language }) => {
+  return (
+    <SyntaxHighlighter language={language} style={atomOneDark}>
+      {value}
+    </SyntaxHighlighter>
+  )
+}
 
 const javascript = () => {
   const router = useRouter()
   const { category } = router.query
 
   const [subcategory, setSubcategory] = useState(subcategories[0].name)
+  console.log(subcategory)
+
   return (
     <div className="bg-blue-100">
       <Head>
@@ -36,23 +53,45 @@ const javascript = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <div className="">
-        <div className="grid grid-cols-10 gap-6 m-5 ">
-          <div className="container mx-auto px-4 bg-purple-500 col-span-2 h-screen top-0">
+      <div className="grid place-items-center h-screen overflow-hidden">
+        <div className="grid grid-cols-10 gap-6 m-5 container">
+          <div className="px-4 col-span-2 h-screen top-0">
             {subcategories.map(subcategory => {
               return (
-                <a className="text-white text-xl p-6 hover:text-white">{subcategory.title}</a>
-
+                <div className="p-1 m-1 bg-slate-400">
+                  <h3 className="text-2xl">{subcategory.title}</h3>
+                </div>
               )
             })}
           </div>
-          <div className="container mx-auto px-4 bg-green-600 col-span-8">
-            deneme
+          <div className="mx-auto grid px-4 bg-green-600 col-span-6 w-11/12">
+            <ReactMarkdown children={TEST_MARKDOWN} components={{
+              code({ node, inline, className, children, ...props }) {
+                const match = /language-(\w+)/.exec(className || '')
+                return !inline && match ? (
+                  <SyntaxHighlighter
+                    children={String(children).replace(/\n$/, '')}
+                    language={match[1]}
+                    PreTag="div"
+                    {...props}
+                  />
+                ) : (
+                  <code className={className} {...props}>
+                    {children}
+                  </code>
+                )
+              }
+            }} />
+          </div>
+          <div className="mx-auto grid px-4 bg-green-600 col-span-2 w-11/12">
           </div>
         </div>
       </div>
     </div>
   )
 }
+
+
+
 
 export default javascript
