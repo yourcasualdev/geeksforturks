@@ -10,7 +10,7 @@ const Navigation = ({ children }) => {
 
 const NavItem = ({ children, to }) => {
     return (
-        <div classname='w-fit bg-blue-500'>
+        <div className='w-fit bg-blue-500'>
             <a href={to}>{children}</a>
         </div>
     )
