@@ -4,7 +4,7 @@ import Link from "next/link"
 const HeaderCategories = () => {
     const categories = [
         { name: 'python', title: 'Python' },
-        { name: 'javascript', title: 'Javascript' },
+        { name: 'javascript/jshome', title: 'Javascript' },
         { name: 'react', title: 'React' },
         { name: 'node', title: 'Node' },
         { name: 'mongodb', title: 'MongoDB' },
@@ -18,19 +18,19 @@ const HeaderCategories = () => {
         { name: 'heroku', title: 'Heroku' },
     ]
 
-  return (
-    <nav className='w-full overflow-hidden bg-green-800'>
-        {
-            categories.map(category => {
-                return (
-                    <Link href={`/category/${category.name}`} key={category.name}>
-                        <a className=' text-slate-200 hover:text-slate-900 text-xl p-6'>{category.title}</a>
-                    </Link>
-                )
-            })
-        }
-    </nav>
-  )
+    return (
+        <nav className='w-full overflow-hidden bg-green-800'>
+            {
+                categories.map(category => {
+                    return (
+                        <Link href={`/category/${category.name}`} key={category.name}>
+                            <a className=' text-slate-200 hover:text-slate-900 text-xl p-6'>{category.title}</a>
+                        </Link>
+                    )
+                })
+            }
+        </nav>
+    )
 }
 
 export default HeaderCategories
