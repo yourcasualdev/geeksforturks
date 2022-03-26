@@ -4,7 +4,7 @@ import Link from "next/link"
 const HeaderCategories = () => {
     const categories = [
         { name: 'python', title: 'Python' },
-        { name: 'javascript/jshome', title: 'Javascript' },
+        { name: 'javascript/jsanasayfa', title: 'Javascript' },
         { name: 'react', title: 'React' },
         { name: 'node', title: 'Node' },
         { name: 'mongodb', title: 'MongoDB' },

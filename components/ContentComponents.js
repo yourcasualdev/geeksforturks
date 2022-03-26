@@ -11,7 +11,7 @@ const Content = ({ children }) => {
 const ContentTitle = ({ children }) => {
     return (
         <div>
-            <h2 className='text-5xl font-bold font-sans mb-20'>{children}</h2>
+            <h1 className='text-5xl font-bold font-sans mb-20'>{children}</h1>
         </div>
     )
 }

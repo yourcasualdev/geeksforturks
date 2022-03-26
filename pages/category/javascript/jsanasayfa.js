@@ -19,7 +19,7 @@ const javascript = () => {
             <Categories>
                 <Category name='JS Anasayfa' to='jsanasayfa' />
                 <Category name='JS Nereye Koyulur' to='jsnereye' />
-                <Category name='JS Çıktı' to='jscıktı' />
+                <Category name='JS Çıktı' to='jscikti' />
             </Categories>
             <Content>
                 <ContentTitle>JavaScript Anasayfa</ContentTitle>
