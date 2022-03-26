@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import React from 'react'
-import Header from '../../components/Header'
-import { ContentTitle, ContentSubTitle, ContentSection, ContentSectionTitle, Content } from '../../components/ContentComponents'
-import Navigation, { NavItem } from '../../components/Navigation'
-import Categories from '../../components/Categories'
+import Header from '../../../components/Header'
+import { ContentTitle, ContentSubTitle, ContentSection, ContentSectionTitle, Content } from '../../../components/ContentComponents'
+import Navigation, { NavItem } from '../../../components/Navigation'
+import Categories, { Category } from '../../../components/Categories'
 
 const javascript = () => {
     return (
@@ -15,10 +15,25 @@ const javascript = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Header />
-            <Categories>Deneme</Categories>
-            <div className='flex '>
+            <Categories>
+                <Category name='JS Home' to='jshome' />
+                <Category name='JS Introduction' to='jsIntroduction' />
+                <Category name='node' to='Node' />
+                <Category name='mongodb' to='MongoDB' />
+                <Category name='express' to='Express' />
+                <Category name='html' to='HTML' />
+                <Category name='html' to='HTML' />
+                <Category name='html' to='HTML' />
+                <Category name='html' to='HTML' />
+                <Category name='html' to='HTML' />
+                <Category name='html' to='HTML' />
+                <Category name='html' to='HTML' />
+                <Category name='html' to='HTML' />
+                <Category name='html' to='HTML' />
+            </Categories>
+            <div className='flex'>
                 <Content>
-                    <ContentTitle>JavaScript Introduction</ContentTitle>
+                    <ContentTitle>JS HOME</ContentTitle>
                     <ContentSubTitle>
                         This page contains some examples of what JavaScript can do.
                     </ContentSubTitle>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Content = ({ children }) => {
     return (
-        <main className='bg-slate-50 p-5 w-full left-[max(0px,calc(50%-52rem))]  lg:h-full sm:w-6/12 m-3 max-w-3xl mx-auto pt-10'>
+        <main className='bg-slate-50 p-5 w-full  m-3 max-w-3xl mx-auto pt-10 sm:w-[45rem] lg:ml-[max(0px,calc(50%-12rem))] xl:ml-[max(0px,calc(50%-20rem))]'>
             {children}
         </main>
     )
