@@ -1,4 +1,3 @@
-import { Main } from 'next/document'
 import Head from 'next/head'
 import Footer from '../components/Footer'
 import GoogleAds from '../components/GoogleAds'

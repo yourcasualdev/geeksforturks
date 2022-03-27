@@ -11,7 +11,7 @@ import Main from '../../../context/context'
 
 const javascript = () => {
     return (
-        <Main className=''>
+        <Main>
             <Head>
                 <title>Geeks For Turks</title>
                 <meta name="description" content="Geeks for türks anasayfa" />
