@@ -7,10 +7,11 @@ import Categories, { Category } from '../../../components/Categories'
 import Code, { InlineCode } from '../../../components/Code'
 import Footer from '../../../components/Footer'
 import GoogleAds from '../../../components/GoogleAds'
+import Main from '../../../context/context'
 
 const javascript = () => {
     return (
-        <div className=''>
+        <Main className=''>
             <Head>
                 <title>Geeks For Turks</title>
                 <meta name="description" content="Geeks for türks anasayfa" />
@@ -115,7 +116,7 @@ const javascript = () => {
                 <NavItem to='#5'>HTML dosyasının içine yazmak</NavItem>
             </Navigation>
             <Footer />
-        </div>
+        </Main>
     )
 }
 

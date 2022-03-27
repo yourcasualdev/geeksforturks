@@ -7,14 +7,11 @@ import Categories, { Category, MobileCategories } from '../../../components/Cate
 import Code, { InlineCode } from '../../../components/Code'
 import Footer from '../../../components/Footer'
 import GoogleAds from '../../../components/GoogleAds'
+import Main from '../../../context/context'
 
 const javascript = () => {
-    const [isHidden, setIsHidden] = useState(true)
-    const changeHidden = () => {
-        setIsHidden(!isHidden)
-    }
     return (
-        <div>
+        <Main>
             <Head>
                 <title>Geeks For Turks</title>
                 <meta name="description" content="Geeks for türks anasayfa" />
@@ -22,8 +19,8 @@ const javascript = () => {
                 <link rel="icon" href="/favicon.ico" />
                 <GoogleAds />
             </Head>
-            <Header changeHidden={changeHidden} />
-            <Categories ishidden={isHidden}>
+            <Header />
+            <Categories>
                 <Category name='JS Anasayfa' to='jsanasayfa' />
                 <Category name='JS Nereye Koyulur' to='jsnereye' />
                 <Category name='JS Çıktı' to='jscikti' />
@@ -65,7 +62,7 @@ const javascript = () => {
                 <NavItem to='#4'>Javascript HTML elementlerinin görünürlüğünü değiştirebilir.</NavItem>
             </Navigation>
             <Footer />
-        </div>
+        </Main>
 
     )
 }

@@ -1,3 +1,4 @@
+import { Main } from 'next/document'
 import Head from 'next/head'
 import Footer from '../components/Footer'
 import GoogleAds from '../components/GoogleAds'
@@ -14,7 +15,6 @@ export default function Home() {
         <meta name="Keywords" content="HTML, Python, CSS, SQL, JavaScript, Nasıl Yapılır, PHP, Java, C, C++, C#, jQuery, Bootstrap, Renkler, W3.CSS, XML, MySQL, Icons, Node.js, React, Graphics, Angular, R, AI, Git, Data Science, Kurslar, Eğitimler, Programlama, Web Development, Training, Learning, Quiz, Exercises, Courses, Lessons, References, Examples, Learn to code, Source code, Demos, Tips, Website, Örnekler, Websitesi"></meta>
         <link rel="icon" href="/favicon.ico" />
         <link rel="canonical" href="https://geeksforturks.com" />
-        <meta></meta>
         <GoogleAds />
       </Head>
       <Header />

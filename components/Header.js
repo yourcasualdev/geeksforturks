@@ -1,6 +1,8 @@
 
 import Link from "next/link"
 import { useState, useEffect } from "react"
+import { useContext } from "react"
+import { MainContext } from "../context/context"
 
 const HeaderCategories = () => {
   const categories = [
@@ -34,13 +36,13 @@ const HeaderCategories = () => {
   )
 }
 
-const Header = ({ categories, changeHidden }) => {
-
+const Header = () => {
+  const { changeIsHidden } = useContext(MainContext)
   return (
     <>
       <header className="sticky w-full top-0 shadow-lg">
         <div className='bg-black flex space-x-10   text-white w-full h-20 items-center text-center p-5 lg:block'>
-          <HiddenButton changeHidden={changeHidden} />
+          <HiddenButton changeHidden={changeIsHidden} />
           <h1 className='font-bold text-3xl'><Link href={"/"}>Geeks for Turks</Link></h1>
         </div>
         <HeaderCategories />
@@ -56,7 +58,7 @@ const HiddenButton = ({ changeHidden }) => {
   return (
     <div className="flex justify-center lg:hidden">
       <a
-        onClick={() => { changeHidden() }}
+        onClick={() => { changeHidden ? changeHidden() : null }}
         className="bg-blue-500 cursor-pointer hover:bg-blue-700 text-white font-bold py-4 px-4 rounded"
       >
         <svg
@@ -67,7 +69,7 @@ const HiddenButton = ({ changeHidden }) => {
           <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
         </svg>
       </a>
-    </div>
+    </div >
   )
 }
 
