@@ -3,11 +3,12 @@ import Footer from '../components/Footer'
 import GoogleAds from '../components/GoogleAds'
 import Header from '../components/Header'
 import { CategoryShowCase } from '../components/MainSiteComponents'
+import Main from '../context/context'
 
 
 export default function Home() {
   return (
-    <div>
+    <Main>
       <Head>
         <title>Geeks For Turks Anasayfa</title>
         <meta name="description" content="Türk yazılımcılar için türkce kaynak." />
@@ -22,6 +23,6 @@ export default function Home() {
         <CategoryShowCase title={"Pyhton  Öğren"} color={"bg-blue-400"} desc={"Dünyanın en çok kullanılan yazılım dilini öğren."} href={"/category/javascript/jsanasayfa"} hrefName={"JavaScript Anasayfa"} />
       </main>
       <Footer />
-    </div>
+    </Main>
   )
 }
