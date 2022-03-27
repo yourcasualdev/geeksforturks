@@ -15,8 +15,7 @@ const javascript = () => {
                 <meta name="description" content="Geeks for türks anasayfa" />
                 <meta name="Keywords" content="HTML, Python, CSS, SQL, JavaScript, How to, PHP, Java, C, C++, C#, jQuery, Bootstrap, Colors, W3.CSS, XML, MySQL, Icons, Node.js, React, Graphics, Angular, R, AI, Git, Data Science, Code Game, Tutorials, Programming, Web Development, Training, Learning, Quiz, Exercises, Courses, Lessons, References, Examples, Learn to code, Source code, Demos, Tips, Website"></meta>
                 <link rel="icon" href="/favicon.ico" />
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9237949336513089"
-                    crossorigin="anonymous"></script>
+                <GoogleAds />
             </Head>
             <Header />
             <Categories>
