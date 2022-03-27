@@ -1,14 +1,18 @@
 import Head from 'next/head'
-import React from 'react'
+import React, { useState } from 'react'
 import Header from '../../../components/Header'
 import { ContentTitle, ContentSubTitle, ContentSection, ContentSectionTitle, Content } from '../../../components/ContentComponents'
 import Navigation, { NavItem } from '../../../components/Navigation'
-import Categories, { Category } from '../../../components/Categories'
+import Categories, { Category, MobileCategories } from '../../../components/Categories'
 import Code, { InlineCode } from '../../../components/Code'
 import Footer from '../../../components/Footer'
 import GoogleAds from '../../../components/GoogleAds'
 
 const javascript = () => {
+    const [isHidden, setIsHidden] = useState(true)
+    const changeHidden = () => {
+        setIsHidden(!isHidden)
+    }
     return (
         <div>
             <Head>
@@ -18,8 +22,8 @@ const javascript = () => {
                 <link rel="icon" href="/favicon.ico" />
                 <GoogleAds />
             </Head>
-            <Header />
-            <Categories>
+            <Header changeHidden={changeHidden} />
+            <Categories ishidden={isHidden}>
                 <Category name='JS Anasayfa' to='jsanasayfa' />
                 <Category name='JS Nereye Koyulur' to='jsnereye' />
                 <Category name='JS Çıktı' to='jscikti' />

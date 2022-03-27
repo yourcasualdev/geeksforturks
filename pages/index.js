@@ -9,10 +9,12 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Geeks For Turks</title>
-        <meta name="description" content="Geeks for türks anasayfa" />
-        <meta name="Keywords" content="HTML, Python, CSS, SQL, JavaScript, How to, PHP, Java, C, C++, C#, jQuery, Bootstrap, Colors, W3.CSS, XML, MySQL, Icons, Node.js, React, Graphics, Angular, R, AI, Git, Data Science, Code Game, Tutorials, Programming, Web Development, Training, Learning, Quiz, Exercises, Courses, Lessons, References, Examples, Learn to code, Source code, Demos, Tips, Website"></meta>
+        <title>Geeks For Turks Anasayfa</title>
+        <meta name="description" content="Türk yazılımcılar için türkce kaynak." />
+        <meta name="Keywords" content="HTML, Python, CSS, SQL, JavaScript, Nasıl Yapılır, PHP, Java, C, C++, C#, jQuery, Bootstrap, Renkler, W3.CSS, XML, MySQL, Icons, Node.js, React, Graphics, Angular, R, AI, Git, Data Science, Kurslar, Eğitimler, Programlama, Web Development, Training, Learning, Quiz, Exercises, Courses, Lessons, References, Examples, Learn to code, Source code, Demos, Tips, Website, Örnekler, Websitesi"></meta>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="canonical" href="https://geeksforturks.com" />
+        <meta></meta>
         <GoogleAds />
       </Head>
       <Header />

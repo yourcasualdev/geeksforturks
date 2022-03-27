@@ -34,18 +34,42 @@ const HeaderCategories = () => {
   )
 }
 
-const Header = () => {
+const Header = ({ categories, changeHidden }) => {
 
   return (
     <>
       <header className="sticky w-full top-0 shadow-lg">
-        <div className='bg-black text-white w-full h-20 items-center text-center p-5 '>
+        <div className='bg-black flex space-x-10   text-white w-full h-20 items-center text-center p-5 lg:block'>
+          <HiddenButton changeHidden={changeHidden} />
           <h1 className='font-bold text-3xl'><Link href={"/"}>Geeks for Turks</Link></h1>
         </div>
         <HeaderCategories />
       </header>
+
     </>
   )
 }
+
+const HiddenButton = ({ changeHidden }) => {
+
+
+  return (
+    <div className="flex justify-center lg:hidden">
+      <a
+        onClick={() => { changeHidden() }}
+        className="bg-blue-500 cursor-pointer hover:bg-blue-700 text-white font-bold py-4 px-4 rounded"
+      >
+        <svg
+          className="fill-current h-6 w-6"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+        >
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+        </svg>
+      </a>
+    </div>
+  )
+}
+
 
 export default Header
