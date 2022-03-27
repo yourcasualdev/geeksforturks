@@ -5,6 +5,7 @@ import { ContentTitle, ContentSubTitle, ContentSection, ContentSectionTitle, Con
 import Navigation, { NavItem } from '../../../components/Navigation'
 import Categories, { Category } from '../../../components/Categories'
 import Code, { InlineCode } from '../../../components/Code'
+import Footer from '../../../components/Footer'
 
 const javascript = () => {
     return (
@@ -14,6 +15,8 @@ const javascript = () => {
                 <meta name="description" content="Geeks for türks anasayfa" />
                 <meta name="Keywords" content="HTML, Python, CSS, SQL, JavaScript, How to, PHP, Java, C, C++, C#, jQuery, Bootstrap, Colors, W3.CSS, XML, MySQL, Icons, Node.js, React, Graphics, Angular, R, AI, Git, Data Science, Code Game, Tutorials, Programming, Web Development, Training, Learning, Quiz, Exercises, Courses, Lessons, References, Examples, Learn to code, Source code, Demos, Tips, Website"></meta>
                 <link rel="icon" href="/favicon.ico" />
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9237949336513089"
+                    crossorigin="anonymous"></script>
             </Head>
             <Header />
             <Categories>
@@ -111,6 +114,7 @@ const javascript = () => {
                 <NavItem to='#4'>document.write() ile çıktı almak.</NavItem>
                 <NavItem to='#5'>HTML dosyasının içine yazmak</NavItem>
             </Navigation>
+            <Footer />
         </div>
     )
 }

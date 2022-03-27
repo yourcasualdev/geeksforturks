@@ -1,7 +1,9 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import ReactMarkdown from 'react-markdown'
+import Footer from '../components/Footer'
 import Header from '../components/Header'
+import { CategoryShowCase } from '../components/MainSiteComponents'
+
+
 export default function Home() {
   return (
     <div>
@@ -12,9 +14,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main className='items-center'>
+      <main>
+        <CategoryShowCase title={"JavaScript Öğren"} color={"bg-yellow-300"} desc={"Dünyanın en çok kullanılan yazılım dilini öğren."} href={"/category/javascript/jsanasayfa"} hrefName={"JavaScript Anasayfa"} />
+        <CategoryShowCase title={"Pyhton  Öğren"} color={"bg-blue-400"} desc={"Dünyanın en çok kullanılan yazılım dilini öğren."} href={"/category/javascript/jsanasayfa"} hrefName={"JavaScript Anasayfa"} />
       </main>
-
+      <Footer />
     </div>
   )
 }
