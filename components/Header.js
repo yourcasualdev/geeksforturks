@@ -7,7 +7,7 @@ import { MainContext } from "../context/context"
 const HeaderCategories = () => {
   const categories = [
     { name: 'python', title: 'Python' },
-    { name: 'javascript/jsanasayfa', title: 'Javascript' },
+    { name: 'javascript/jshome', title: 'Javascript' },
     { name: 'react', title: 'React' },
     { name: 'node', title: 'Node' },
     { name: 'mongodb', title: 'MongoDB' },

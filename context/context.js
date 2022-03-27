@@ -3,7 +3,7 @@ import { createContext, useContext, useState } from "react";
 const MainContext = createContext();
 
 const Main = ({ children }) => {
-    const [ishidden, setIshidden] = useState(false);
+    const [ishidden, setIshidden] = useState(true);
     const changeIsHidden = () => {
         setIshidden(!ishidden);
     };
