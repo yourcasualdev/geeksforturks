@@ -6,6 +6,7 @@ import Navigation, { NavItem } from '../../../components/Navigation'
 import Categories, { Category } from '../../../components/Categories'
 import Code, { InlineCode } from '../../../components/Code'
 import Footer from '../../../components/Footer'
+import GoogleAds from '../../../components/GoogleAds'
 
 const javascript = () => {
     return (
