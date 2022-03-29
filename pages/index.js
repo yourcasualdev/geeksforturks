@@ -16,8 +16,8 @@ export default function Home() {
       </PageHead>
       <Header />
       <main>
-        <CategoryShowCase title={"JavaScript Öğren"} color={"bg-yellow-300"} desc={"Dünyanın en çok kullanılan yazılım dilini öğren."} href={"/category/javascript/jsanasayfa"} hrefName={"JavaScript Anasayfa"} />
-        <CategoryShowCase title={"Pyhton  Öğren"} color={"bg-blue-400"} desc={"Dünyanın en çok kullanılan yazılım dilini öğren."} href={"/category/javascript/jsanasayfa"} hrefName={"JavaScript Anasayfa"} />
+        <CategoryShowCase title={"JavaScript Öğren"} color={"bg-yellow-300"} desc={"Dünyanın en çok kullanılan yazılım dilini öğren."} href={"/category/javascript/jshome"} hrefName={"JavaScript Anasayfa"} />
+        <CategoryShowCase title={"Pyhton  Öğren"} color={"bg-blue-400"} desc={"Dünyanın en çok kullanılan yazılım dilini öğren."} href={"/category/javascript/jshome"} hrefName={"JavaScript Anasayfa"} />
       </main>
       <Footer />
     </Main>
