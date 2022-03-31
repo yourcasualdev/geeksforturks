@@ -42,7 +42,7 @@ const Header = () => {
 
   useEffect(() => {
     const URL = window.location.href
-    setIsroot(URL === 'https://www.geeksforturks.com' || URL === 'https://geeksforturks.com' || URL === 'http://localhost:3000/')
+    setIsroot(URL === 'https://www.geeksforturks.com/' || URL === 'https://geeksforturks.com/' || URL === 'http://localhost:3000/')
   }, [])
 
 
