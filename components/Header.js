@@ -22,7 +22,7 @@ const HeaderCategories = () => {
   ]
 
   return (
-    <nav className='w-full overflow-hidden bg-green-800'>
+    <nav className='w-full overflow-x-auto overflow-y-hidden bg-green-800'>
       {
         categories.map(category => {
           return (
