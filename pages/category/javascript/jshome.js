@@ -32,18 +32,18 @@ const javascript = () => {
                     Aşağıdaki örnekte <InlineCode>getElementById()</InlineCode> methodu ile <InlineCode>id="deneme"</InlineCode> adlı elementin içeriği değiştiriliyor. <br />
 
                     <Code lang={"javascript"}>
-                        document.getElementById("deneme").innerHTML = "Hello World!";
+                        {'document.getElementById("deneme").innerHTML = "Hello World!";'}
                     </Code>
                 </ContentSection>
                 <ContentSectionTitle id="3">JavaScript HTML elementlerinin stilini değiştirebilir.</ContentSectionTitle>
                 <ContentSection>
-                    <Code>
+                    <Code lang={"javascript"}>
                         document.getElementById("deneme").style.color = "red";
                     </Code>
                 </ContentSection>
                 <ContentSectionTitle id="4">JavaScript HTML elementlerinin görünürlüğünü değiştirebilir.</ContentSectionTitle>
                 <ContentSection>
-                    <Code>
+                    <Code lang={"javascript"}>
                         document.getElementById("deneme").style.display = "hidden";
                     </Code>
                     Tekrar görünür yapmak için <InlineCode>style.display = "block"</InlineCode> yazılır.

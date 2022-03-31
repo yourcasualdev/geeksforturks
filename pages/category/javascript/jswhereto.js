@@ -24,7 +24,7 @@ const javascript = () => {
                 <ContentSectionTitle>&lt;script&gt; Tagı</ContentSectionTitle>
                 <ContentSection>
                     HTMl dosyalanımızda <InlineCode>&lt;script&gt;</InlineCode> taglarının arasında javascript kodu yazabiliriz. <Break />
-                    <Code>
+                    <Code lang={"html"}>
                         {`
                             <!DOCTYPE html>
                             <html lang="en">

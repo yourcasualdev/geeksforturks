@@ -5,9 +5,7 @@ import { docco } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 const Code = ({ children, lang }) => {
     return (
         <div className='border-4 mt-4'>
-            <SyntaxHighlighter language={lang} style={docco}>
-                {children}
-            </SyntaxHighlighter>
+            <SyntaxHighlighter children={children} language={lang} style={docco} />
         </div>
     )
 }
