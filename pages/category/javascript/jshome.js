@@ -19,7 +19,7 @@ const javascript = () => {
             </PageHead>
             <Header />
             <JsCategories />
-            <Content>P
+            <Content>
                 <ContentTitle>JavaScript Anasayfa</ContentTitle>
 
                 <ContentSectionTitle id="1">Neden JavaScript</ContentSectionTitle>

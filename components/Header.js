@@ -38,11 +38,20 @@ const HeaderCategories = () => {
 
 const Header = () => {
   const { changeIsHidden } = useContext(MainContext)
+  const [isRoot, setIsroot] = useState(false)
+
+  useEffect(() => {
+    const URL = window.location.href
+    setIsroot(URL === 'https://www.geeksforturks.com' || URL === 'https://geeksforturks.com' || URL === 'http://localhost:3000/')
+  }, [])
+
+
+
   return (
     <>
       <header className="sticky w-full top-0 shadow-lg">
-        <div className='bg-black flex space-x-10   text-white w-full h-20 items-center text-center p-5 lg:block'>
-          <HiddenButton changeHidden={changeIsHidden} />
+        <div className={`bg-black ${!isRoot ? "flex" : ""} space-x-10   text-white w-full h-20 items-center text-center p-5 lg:block`}>
+          <HiddenButton changeHidden={changeIsHidden} isRoot={isRoot} />
           <h1 className='font-bold text-3xl'><Link href={"/"}>Geeks for Turks</Link></h1>
         </div>
         <HeaderCategories />
@@ -52,11 +61,10 @@ const Header = () => {
   )
 }
 
-const HiddenButton = ({ changeHidden }) => {
-
+const HiddenButton = ({ changeHidden, isRoot }) => {
 
   return (
-    <div className="flex justify-center lg:hidden">
+    <div className={`flex ${isRoot ? "hidden" : ""} justify-center lg:hidden`}>
       <a
         onClick={() => { changeHidden ? changeHidden() : null }}
         className="bg-blue-500 cursor-pointer hover:bg-blue-700 text-white font-bold py-4 px-4 rounded"
@@ -69,7 +77,7 @@ const HiddenButton = ({ changeHidden }) => {
           <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
         </svg>
       </a>
-    </div >
+    </div>
   )
 }
 
