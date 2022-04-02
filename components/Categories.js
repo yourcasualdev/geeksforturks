@@ -14,7 +14,7 @@ const Categories = ({ children }) => {
 
 const Category = ({ name, to }) => {
     return (
-        <div className='w-full p-5 border-b-2'>
+        <div className='w-full p-5 border-b-2 hover:text-green-600'>
             <Link href={to}>
                 <a className=''>{name}</a>
             </Link>
