@@ -9,7 +9,7 @@ const Footer = () => {
                 </div>
                 <address>
                     <p>İletişim </p>
-                    <a href='mailto:babalibrahim34@gmail.com'>babalibrahim34@gmail.com</a>
+                    <a href='mailto:support@geeksforturks.com'>babalibrahim34@gmail.com</a>
                 </address>
             </div>
 
