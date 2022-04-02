@@ -26,22 +26,21 @@ const javascript = () => {
                     HTMl dosyalanımızda <InlineCode>&lt;script&gt;</InlineCode> taglarının arasında javascript kodu yazabiliriz. <Break />
                     <Code lang={"html"}>
                         {`
-                            <!DOCTYPE html>
-                            <html lang="en">
-                            <head>
-                                <meta charset="UTF-8">
-                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                                <meta http-equiv="X-UA-Compatible" content="ie=edge">
-                                <title>Document</title>
-                            </head>
-                            <body>
-                                <script>
-                                    console.log('Hello World');
-                                </script>
-                            </body>
-                            </html>
-                            `}
-                    </Code>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log('Hello World');
+    </script>
+</body>
+</html>
+                `}</Code>
                 </ContentSection>
 
                 <ContentSectionTitle id="2">Ayrı bir dosyada tutmak.</ContentSectionTitle>
@@ -50,18 +49,18 @@ const javascript = () => {
                     Bu şekilde kaydettiğimiz javascript'i <InlineCode>src</InlineCode> tagında çağırabiliriz. <Break />
                     <Code>
                         {`
-                            <!DOCTYPE html>
-                            <html lang="en">
-                            <head>
-                                <meta charset="UTF-8">
-                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                                <meta http-equiv="X-UA-Compatible" content="ie=edge">
-                                <title>Document</title>
-                                <script src="./main.js"></script>
-                            </head>
-                            <body>
-                            </body>
-                            </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./main.js"></script>
+</head>
+<body>
+</body>
+</html>
                             `}
                     </Code>
                     Burdaki <InlineCode>./</InlineCode> bulunduğumuz dizin anlamına geliyor. <Break />
@@ -78,18 +77,18 @@ const javascript = () => {
                     &lt;body&gt; tagının sonuna ekleyerek sayfamızın sonunda javascript'i yükleyebiliriz. <Break />
                     <Code>
                         {`
-                            <!DOCTYPE html>
-                            <html lang="en">
-                            <head>
-                                <meta charset="UTF-8">
-                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                                <meta http-equiv="X-UA-Compatible" content="ie=edge">
-                                <title>Document</title>
-                            </head>
-                            <body>
-                                <script src="js/main.js"></script>
-                            </body>
-                            </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script src="js/main.js"></script>
+</body>
+</html>
                             `}
                     </Code>
                 </ContentSection>
@@ -99,18 +98,18 @@ const javascript = () => {
                     <InlineCode>defer</InlineCode> etiketi javascript'i arkaplanda yükleyerek sayfanın yavaş açılmasını engeller. <Break />
                     <Code>
                         {`
-                            <!DOCTYPE html>
-                            <html lang="en">
-                            <head>
-                                <meta charset="UTF-8">
-                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                                <meta http-equiv="X-UA-Compatible" content="ie=edge">
-                                <title>Document</title>
-                                <script defer src="js/main.js"></script>
-                            </head>
-                            <body>
-                            </body>
-                            </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+</body>
+</html>
                             `}
                     </Code>
                 </ContentSection>

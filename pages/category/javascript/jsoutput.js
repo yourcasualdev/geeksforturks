@@ -42,9 +42,7 @@ const javascript = () => {
                     <Break />
                     <InlineCode>index.js</InlineCode> adında bir dosya oluşturup, aşağıdaki kodu yazıyoruz.
                     <Code>
-                        {`
-                            console.log("Merhaba Dünya");
-                            `}
+                        {`console.log("Merhaba Dünya");`}
                     </Code>
                     <Break />
                     Tarayıcınızda sayfanızı açtığınızda F12 tuşuna basarak konsolu açtığınızda <InlineCode>Merhaba Dünya</InlineCode> yazısını görürsünüz.
@@ -56,9 +54,7 @@ const javascript = () => {
                     <Break />
                     <InlineCode>index.js</InlineCode> adında bir dosya oluşturup, aşağıdaki kodu yazıyoruz.
                     <Code>
-                        {`
-                            alert("Merhaba Dünya");
-                            `}
+                        {`alert("Merhaba Dünya");`}
                     </Code>
                     <Break />
                     Sayfayı açtığımız anda Merhaba Dünya yazısını içeren bir bilgilendirme kutucuğu açılacaktır.
@@ -74,9 +70,7 @@ const javascript = () => {
                     <Break />
                     <InlineCode>index.js</InlineCode> adında bir dosya oluşturup, aşağıdaki kodu yazıyoruz.
                     <Code>
-                        {`
-                            document.write("Merhaba Dünya");
-                            `}
+                        {`document.write("Merhaba Dünya");`}
                     </Code>
                     <Break />
                     Bu kodu çalıştırdığımızda bütün html kodu silinip <InlineCode>Merhaba Dünya</InlineCode> içerisine yazılacaktır.
@@ -88,15 +82,15 @@ const javascript = () => {
                     <InlineCode>index.html</InlineCode> adında bir dosya oluşturup, aşağıdaki kodu yazıyoruz.
                     <Code>
                         {`
-                            <!DOCTYPE html>
-                            <html lang="en">
-                            <head>
-                            document.getElementById("merhaba").innerHTML = "Merhaba Dünya";
-                            </head>
-                            <body>
-                            <h1 id="merhaba">Benim içimdeki yazı değişicek.</h1>
-                            </body>
-                            </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+document.getElementById("merhaba").innerHTML = "Merhaba Dünya";
+</head>
+<body>
+<h1 id="merhaba">Benim içimdeki yazı değişicek.</h1>
+</body>
+</html>
                             `}
                     </Code>
                 </ContentSection>
