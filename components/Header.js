@@ -47,8 +47,8 @@ const Header = () => {
 
   return (
     <>
-      <header className="sticky w-full top-0 shadow-lg">
-        <div className={`bg-black ${!isRoot ? "flex" : ""} space-x-10   text-white w-full h-20 items-center text-center p-5 lg:block`}>
+      <header className=" w-full top-0 shadow-lg sm:sticky">
+        <div className={`bg-black ${!isRoot ? "flex" : ""} space-x-10 text-white w-full items-center text-center p-5 lg:block`}>
           <HiddenButton changeHidden={changeIsHidden} isRoot={isRoot} />
           <h1 className='font-bold text-3xl'><Link href={"/"}>Geeks for Turks</Link></h1>
         </div>
