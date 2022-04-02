@@ -5,34 +5,32 @@ import { useContext } from "react"
 import { MainContext } from "../context/context"
 
 const HeaderCategories = () => {
-  const categories = [
-    { name: 'python', title: 'Python' },
-    { name: 'javascript/jshome', title: 'Javascript' },
-    { name: 'react', title: 'React' },
-    { name: 'node', title: 'Node' },
-    { name: 'mongodb', title: 'MongoDB' },
-    { name: 'express', title: 'Express' },
-    { name: 'html', title: 'HTML' },
-    { name: 'css', title: 'CSS' },
-    { name: 'bootstrap', title: 'Bootstrap' },
-    { name: 'sass', title: 'Sass' },
-    { name: 'git', title: 'Git' },
-    { name: 'github', title: 'Github' },
-    { name: 'heroku', title: 'Heroku' },
-  ]
-
   return (
     <nav className='w-full overflow-x-auto overflow-y-hidden bg-green-800 sm:overflow-x-hidden'>
-      {
-        categories.map(category => {
-          return (
-            <Link href={`/category/${category.name}`} key={category.name}>
-              <a className=' text-slate-200 hover:text-slate-900 text-xl p-6'>{category.title}</a>
-            </Link>
-          )
-        })
-      }
+      <HeaderCategory href="python" title="Python" disabled />
+      <HeaderCategory href="javascript/jshome" title="JavaScript" />
+      <HeaderCategory href="react" title="React" disabled />
+      <HeaderCategory href="node" title="Node" disabled />
+      <HeaderCategory href="mongodb" title="MongoDB" disabled />
+      <HeaderCategory href="express" title="Express" disabled />
+      <HeaderCategory href="html" title="Html" disabled />
+      <HeaderCategory href="css" title="Css" disabled />
+      <HeaderCategory href="bootstrap" title="Bootstrap" disabled />
+      <HeaderCategory href="sass" title="Sass" disabled />
+      <HeaderCategory href="github" title="Github" disabled />
+      <HeaderCategory href="heroku" title="Heroku" disabled />
     </nav>
+  )
+}
+
+const HeaderCategory = ({ href, title, disabled }) => {
+  return (
+    !disabled ?
+      <Link href={`/category/${href}`} key={href}>
+        <a className=' text-slate-200 hover:text-slate-900 text-xl p-6'>{title}</a>
+      </Link>
+      :
+      <a className=' text-slate-500 text-xl p-6 hover:cursor-not-allowed'>{title}</a>
   )
 }
 
