@@ -14,7 +14,7 @@ const Navigation = ({ children }) => {
 const NavItem = ({ children, to }) => {
     return (
         <div className='w-full p-2'>
-            <a className='font-thin text-lg hover:text-green-600' href={to}>{children}</a>
+            <a className='font-thin text-lg text-black hover:text-green-600' href={to}>{children}</a>
         </div>
     )
 }
