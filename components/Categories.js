@@ -26,7 +26,7 @@ const Category = ({ name, to }) => {
 const JsCategories = () => {
     return (
         <Categories>
-            <Category name='JS Anasayfa' to='/jshome' />
+            <Category name='JS Anasayfa' to='jshome' />
             <Category name='JS Nereye Koyulur' to='jswhereto' />
             <Category name='JS Çıktı' to='jsoutput' />
             <Category name='JS Yorumlar' to='jscomments' />
