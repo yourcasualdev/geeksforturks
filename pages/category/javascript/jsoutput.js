@@ -95,13 +95,7 @@ document.getElementById("merhaba").innerHTML = "Merhaba Dünya";
                     </Code>
                 </ContentSection>
             </Content>
-            <Navigation>
-                <NavItem to='#1'>JavaScript nerelere çıktı verebilir ?</NavItem>
-                <NavItem to='#2'>Console.log() ile çıktı almak</NavItem>
-                <NavItem to='#3'>Alert() fonksiyonu ile çıktı almak</NavItem>
-                <NavItem to='#4'>document.write() ile çıktı almak.</NavItem>
-                <NavItem to='#5'>HTML dosyasının içine yazmak</NavItem>
-            </Navigation>
+            <Navigation />
             <Footer />
         </Main>
     )

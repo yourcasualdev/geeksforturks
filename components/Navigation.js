@@ -21,7 +21,7 @@ const Navigation = ({ children }) => {
 
     const anchorScroll = (offset) => {
         window.scrollTo({
-            top: offset - 150,
+            top: offset - 200,
             behavior: 'smooth'
         })
     }

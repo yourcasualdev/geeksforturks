@@ -14,6 +14,7 @@ const Categories = ({ children }) => {
 
 const Category = ({ name, to }) => {
     return (
+        //fix this
         <div className='w-full p-5 border-b-2 hover:text-green-600'>
             <Link href={to}>
                 <a>{name}</a>
@@ -25,7 +26,7 @@ const Category = ({ name, to }) => {
 const JsCategories = () => {
     return (
         <Categories>
-            <Category name='JS Anasayfa' to='jshome' />
+            <Category name='JS Anasayfa' to='/jshome' />
             <Category name='JS Nereye Koyulur' to='jswhereto' />
             <Category name='JS Çıktı' to='jsoutput' />
             <Category name='JS Yorumlar' to='jscomments' />
