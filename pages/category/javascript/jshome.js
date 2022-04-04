@@ -49,12 +49,7 @@ const javascript = () => {
                     Tekrar görünür yapmak için <InlineCode>style.display = "block"</InlineCode> yazılır.
                 </ContentSection>
             </Content>
-            <Navigation>
-                <NavItem to='#1'>Neden JavaScript</NavItem>
-                <NavItem to='#2'>JavaScript HTML içeriğini değiştirebilir</NavItem>
-                <NavItem to='#3'>JavaScript HTML elementlerinin stilini değiştirebilir.</NavItem>
-                <NavItem to='#4'>Javascript HTML elementlerinin görünürlüğünü değiştirebilir.</NavItem>
-            </Navigation>
+            <Navigation />
             <Footer />
         </Main>
 
