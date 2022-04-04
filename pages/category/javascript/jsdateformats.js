@@ -1,6 +1,3 @@
-
-//Unfinished
-
 import React from 'react'
 import Header from '../../../components/Header'
 import { ContentTitle, ContentSubTitle, ContentSection, ContentSectionTitle, Content, Break } from '../../../components/ContentComponents'
@@ -15,59 +12,33 @@ const javascript = () => {
     return (
         <Main>
             <PageHead>
-                <title>Geeks For Turks</title>
+                <title>Geeks For Turks Değişken (Variables)</title>
                 <meta name="description" content="Geeks for türks anasayfa" />
                 <meta name="Keywords" content="HTML, Python, CSS, SQL, JavaScript, How to, PHP, Java, C, C++, C#, jQuery, Bootstrap, Colors, W3.CSS, XML, MySQL, Icons, Node.js, React, Graphics, Angular, R, AI, Git, Data Science, Code Game, Tutorials, Programming, Web Development, Training, Learning, Quiz, Exercises, Courses, Lessons, References, Examples, Learn to code, Source code, Demos, Tips, Website"></meta>
             </PageHead>
             <Header />
             <JsCategories />
             <Content>
-                <ContentTitle id="1">JavaScript Nereye Koyulur ?</ContentTitle>
+                <ContentTitle id="1">Değişken (Variables)</ContentTitle>
 
-                <ContentSectionTitle>&lt;script&gt; Tagı</ContentSectionTitle>
+                <ContentSectionTitle>Değişken(variables) nedir ?</ContentSectionTitle>
                 <ContentSection>
-                    HTMl dosyalanımızda <InlineCode>&lt;script&gt;</InlineCode> taglarının arasında javascript kodu yazabiliriz. <Break />
-                    <Code>
-                        {`
-                            <!DOCTYPE html>
-                            <html lang="en">
-                            <head>
-                                <meta charset="UTF-8">
-                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                                <meta http-equiv="X-UA-Compatible" content="ie=edge">
-                                <title>Document</title>
-                            </head>
-                            <body>
-                                <script>
-                                    console.log('Hello World');
-                                </script>
-                            </body>
-                            </html>
-                            `}
-                    </Code>
+                    Değişken, verileri depolamamıza yarayan kutucuklar gibidir. <Break />
+                    Değişkenlerin değerlerini değiştirebilir veya değiştirmeyecek bir değer atayabiliriz. <Break />
+                    Bu değerleri istediğimiz yerlerde çağırıp kullanabiliriz. <Break />
                 </ContentSection>
 
-                <ContentSectionTitle id="2">Ayrı bir dosyada tutmak.</ContentSectionTitle>
+                <ContentSectionTitle id="2">Değişgen kullanımı örneği</ContentSectionTitle>
                 <ContentSection>
-                    Javascripti <InlineCode>.js</InlineCode> uzantılı dosyalara kaydedebiliriz. <Break />
-                    Bu şekilde kaydettiğimiz javascript'i <InlineCode>src</InlineCode> tagında çağırabiliriz. <Break />
-                    <Code>
+                    Aşağıdaki örnekte sayi1 ve sayi2 adında 2 değişgen oluşturup toplamlarını toplam adlı değişgene atıyoruz.
+                    <Code lang={"javascript"}>
                         {`
-                            <!DOCTYPE html>
-                            <html lang="en">
-                            <head>
-                                <meta charset="UTF-8">
-                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                                <meta http-equiv="X-UA-Compatible" content="ie=edge">
-                                <title>Document</title>
-                                <script src="./main.js"></script>
-                            </head>
-                            <body>
-                            </body>
-                            </html>
-                            `}
+let sayi1 = 10;
+let sayi2 = 20;
+let toplam = sayi1 + sayi2;
+console.log(toplam);
+`}
                     </Code>
-                    Burdaki <InlineCode>./</InlineCode> bulunduğumuz dizin anlamına geliyor. <Break />
                 </ContentSection>
 
                 <ContentSectionTitle id="3">&lt;body&gt; etiketine mi yoksa &lt;head&gt; etiketine mi koymalı ?</ContentSectionTitle>
@@ -118,13 +89,7 @@ const javascript = () => {
                     </Code>
                 </ContentSection>
             </Content>
-            <Navigation>
-                <NavItem to='#1'>Script tagı.</NavItem>
-                <NavItem to='#2'>Ayrı bir dosyada tutmak.</NavItem>
-                <NavItem to='#3'>Body mi Head mi ?</NavItem>
-                <NavItem to='#4'>Sayfanın sonunda yüklemek.</NavItem>
-                <NavItem to='#5'>Defer etiketi.</NavItem>
-            </Navigation>
+            <Navigation/>
             <Footer />
 
 

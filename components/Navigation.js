@@ -36,14 +36,6 @@ const Navigation = ({ children }) => {
     )
 }
 
-const NavItem = ({href,title}) => {
-    return (
-        <div className='w-full p-2'>
-            <a className=' text-[1rem] text-black hover:text-green-600' href={to}>{children}</a>
-        </div>
-    )
-}
 
 export default Navigation
-export { NavItem }
  

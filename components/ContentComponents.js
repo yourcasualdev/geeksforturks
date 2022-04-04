@@ -26,9 +26,8 @@ const ContentSubTitle = ({ children }) => {
 
 const ContentSection = ({ children }) => {
     return (
-        <div>
-            <p className='text-lg font-sans m-1 mb-10 sm:text-xl'>{children}</p>
-        </div>
+            <div className='text-lg font-sans m-1 mb-10 sm:text-xl'>{children}</div>
+
     )
 }
 

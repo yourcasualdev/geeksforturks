@@ -89,13 +89,7 @@ console.log(toplam);
                     </Code>
                 </ContentSection>
             </Content>
-            <Navigation>
-                <NavItem to='#1'>Script tagı.</NavItem>
-                <NavItem to='#2'>Ayrı bir dosyada tutmak.</NavItem>
-                <NavItem to='#3'>Body mi Head mi ?</NavItem>
-                <NavItem to='#4'>Sayfanın sonunda yüklemek.</NavItem>
-                <NavItem to='#5'>Defer etiketi.</NavItem>
-            </Navigation>
+            <Navigation/>
             <Footer />
 
 
