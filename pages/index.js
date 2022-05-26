@@ -1,8 +1,4 @@
-import Footer from '../components/Footer'
-import Header from '../components/Header'
-import { CategoryShowCase } from '../components/MainSiteComponents'
-import Main from '../context/context'
-import PageHead from "../components/PageHead"
+import {PageHead, Footer, Header, Main, CategoryShowCase} from "../components"
 
 
 export default function Home() {
@@ -17,7 +13,7 @@ export default function Home() {
       <Header />
       <main>
         <CategoryShowCase title={"JavaScript Öğren"} color={"bg-yellow-300"} desc={"Dünyanın en çok kullanılan yazılım dilini öğren."} href={"/category/javascript/jshome"} hrefName={"JavaScript Anasayfa"} />
-        <CategoryShowCase title={"Pyhton  Öğren"} color={"bg-blue-400"} desc={"Dünyanın en çok kullanılan yazılım dilini öğren."} href={"/category/javascript/jshome"} hrefName={"JavaScript Anasayfa"} />
+        <CategoryShowCase title={"Python  Öğren"} color={"bg-blue-400"} desc={"Dünyanın en çok kullanılan yazılım dilini öğren."} href={"/category/javascript/jshome"} hrefName={"JavaScript Anasayfa"} />
       </main>
       <Footer />
     </Main>
