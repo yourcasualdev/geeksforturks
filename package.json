@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "marked": "^4.0.12",
-    "mongoose": "^6.2.7",
+    "mongoose": "^6.4.6",
     "next": "12.1.0",
     "next-sitemap": "^2.5.14",
     "react": "17.0.2",
